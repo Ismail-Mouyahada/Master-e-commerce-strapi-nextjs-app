@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etapes",
+  "info": {
+    "singularName": "etape",
+    "pluralName": "etapes",
+    "displayName": "Etape",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingredient.ingredient"
+    },
+    "recette": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recette.recette",
+      "inversedBy": "etape"
+    },
+    "Instructions": {
+      "type": "richtext"
+    }
+  }
+}

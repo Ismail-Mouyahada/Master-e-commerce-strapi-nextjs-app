@@ -1,0 +1,79 @@
+{
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "/newEmail?to=%s"
+    }
+  ],
+  "name": "Recipito PWA",
+  "short_name": "Recipito",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Une application pour partager des recettes et découvrir des restaurants Recipito.",
+  "lang": "fr",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "Capture d'écran de la page d'accueil"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": "https://demos-ismail-mou.site"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Recettes Rapides",
+      "url": "/quickrecipes",
+      "description": "Découvrez nos recettes rapides et faciles."
+    },
+    {
+      "name": "Nouveautés",
+      "url": "/new",
+      "description": "Découvrez nos dernières recettes ajoutées."
+    },
+    {
+      "name": "Restaurant Finder",
+      "url": "/restaurants",
+      "description": "Trouvez des restaurants près de chez vous."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recettes",
+  "info": {
+    "singularName": "recette",
+    "pluralName": "recettes",
+    "displayName": "Recette",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_recette": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "difficulte": {
+      "type": "integer"
+    },
+    "temps_preparation": {
+      "type": "decimal"
+    },
+    "etapes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etape.etape"
+    },
+    "ingredients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingredient.ingredient"
+    },
+    "etape": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::etape.etape",
+      "mappedBy": "recette"
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "recettes"
+    }
+  }
+}

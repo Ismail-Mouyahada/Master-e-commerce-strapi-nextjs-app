@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredients",
+  "info": {
+    "singularName": "ingredient",
+    "pluralName": "ingredients",
+    "displayName": "Ingredient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_ingredient": {
+      "type": "string"
+    },
+    "quantite": {
+      "type": "decimal"
+    },
+    "unite": {
+      "type": "enumeration",
+      "enum": [
+        "L",
+        "ml",
+        "g",
+        "kg",
+        "Cuillère",
+        "Pincée",
+        "Unité",
+        "Feuille",
+        "Branche"
+      ]
+    }
+  }
+}
